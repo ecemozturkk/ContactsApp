@@ -13,6 +13,10 @@
 		5249D9682A6FE7570048FDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5249D9662A6FE7570048FDAF /* Main.storyboard */; };
 		5249D96A2A6FE7580048FDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5249D9692A6FE7580048FDAF /* Assets.xcassets */; };
 		5249D96D2A6FE7580048FDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5249D96B2A6FE7580048FDAF /* LaunchScreen.storyboard */; };
+		5249D9752A6FF74E0048FDAF /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249D9742A6FF74E0048FDAF /* ContactsTableViewCell.swift */; };
+		5249D9772A6FFDD50048FDAF /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249D9762A6FFDD50048FDAF /* ContactModel.swift */; };
+		5249D9792A7050F30048FDAF /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249D9782A7050F30048FDAF /* PickerViewController.swift */; };
+		5249D97B2A7051610048FDAF /* PickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5249D97A2A7051610048FDAF /* PickerViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5249D9692A6FE7580048FDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5249D96C2A6FE7580048FDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5249D96E2A6FE7580048FDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5249D9742A6FF74E0048FDAF /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		5249D9762A6FFDD50048FDAF /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		5249D9782A7050F30048FDAF /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		5249D97A2A7051610048FDAF /* PickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PickerViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				5249D9602A6FE7570048FDAF /* AppDelegate.swift */,
 				5249D9622A6FE7570048FDAF /* SceneDelegate.swift */,
 				5249D9642A6FE7570048FDAF /* ViewController.swift */,
+				5249D9742A6FF74E0048FDAF /* ContactsTableViewCell.swift */,
 				5249D9662A6FE7570048FDAF /* Main.storyboard */,
 				5249D9692A6FE7580048FDAF /* Assets.xcassets */,
 				5249D96B2A6FE7580048FDAF /* LaunchScreen.storyboard */,
 				5249D96E2A6FE7580048FDAF /* Info.plist */,
+				5249D9762A6FFDD50048FDAF /* ContactModel.swift */,
+				5249D9782A7050F30048FDAF /* PickerViewController.swift */,
+				5249D97A2A7051610048FDAF /* PickerViewController.storyboard */,
 			);
 			path = ContactsApp;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 				5249D96D2A6FE7580048FDAF /* LaunchScreen.storyboard in Resources */,
 				5249D96A2A6FE7580048FDAF /* Assets.xcassets in Resources */,
 				5249D9682A6FE7570048FDAF /* Main.storyboard in Resources */,
+				5249D97B2A7051610048FDAF /* PickerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5249D9792A7050F30048FDAF /* PickerViewController.swift in Sources */,
+				5249D9752A6FF74E0048FDAF /* ContactsTableViewCell.swift in Sources */,
 				5249D9652A6FE7570048FDAF /* ViewController.swift in Sources */,
 				5249D9612A6FE7570048FDAF /* AppDelegate.swift in Sources */,
+				5249D9772A6FFDD50048FDAF /* ContactModel.swift in Sources */,
 				5249D9632A6FE7570048FDAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
