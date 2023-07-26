@@ -7,11 +7,22 @@
 
 import UIKit
 
+protocol PickerViewControllerDelegate {
+    func didSelectContactType(_ type: ContactType)
+}
+
+//Protokol kullanımında fonksiyonu kullanma zorunluluğu ortadan kaldırıldı.
+extension PickerViewControllerDelegate {
+    func didSelectContactType(_ type: ContactType) {}
+}
+
 class PickerViewController: UIViewController {
     
     @IBOutlet weak var filterPickerView: UIPickerView!
     
     private var selectedContactType: ContactType?
+    
+    var delegate: PickerViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +32,7 @@ class PickerViewController: UIViewController {
     }
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
+        delegate?.didSelectContactType(selectedContactType ?? .family)
         dismiss(animated: true)
     }
 }

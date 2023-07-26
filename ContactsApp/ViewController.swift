@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private var selectedContactType: ContactType?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "PickerViewController", bundle: nil)
         
         if let vc = storyboard.instantiateViewController(identifier: "PickerViewController") as? PickerViewController {
+            vc.delegate = self
             vc.modalPresentationStyle = .overCurrentContext
             self.present(vc, animated: true)
         }
@@ -34,6 +37,19 @@ class ViewController: UIViewController {
 
 
 }
+
+// MARK: - PickerViewController Delegate Methods
+
+extension ViewController: PickerViewControllerDelegate {
+    func didSelectContactType(_ type: ContactType) {
+        print(type)
+        selectedContactType = type
+    }
+    
+    
+}
+
+// MARK: - TableView Delegate Methods
 //Delegate yapısı tetikleme-aksiyonlarla, DataSource yapısı içeriği ile ilgilidir
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
